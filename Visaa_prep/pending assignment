@@ -1,0 +1,7 @@
+x,y,z=map(int,input().split())
+total=x*y
+required=z*24*60
+if total<=required:
+    print("YES")
+else:
+    print("NO")
