@@ -1,0 +1,8 @@
+n=int(input())
+m=[]
+for i in range(n):
+    row=list(map(int,input().split()))
+    m.append(row)
+for j in range(n):
+    transposed_row=[m[i][j] for i in range(n)]
+    print(" ".join(map(str, transposed_row)))
