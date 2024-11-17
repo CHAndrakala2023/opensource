@@ -1,0 +1,12 @@
+n=int(input())
+a=list(map(int,input().split()))
+sum=sum(a)
+left_sum=0
+b=[]
+for i in range(n):
+    right_sum=sum-left_sum-a[i]
+    balance=abs(left_sum-right_sum)
+    b.append(balance)
+    left_sum+=a[i]
+print(" ".join(map(str,b)))
+    
