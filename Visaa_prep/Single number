@@ -1,0 +1,6 @@
+n=int(input())
+x=list(map(int,input().split()))
+count=0
+for num in x:
+    count ^= num
+print(count)
