@@ -1,0 +1,4 @@
+n=int(input())
+x=list(map(int,input().split()))
+is_sorted = all(x[i] <= x[i+1] for i in range(n - 1))
+print("true" if is_sorted else "false")
