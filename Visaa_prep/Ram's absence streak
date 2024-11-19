@@ -1,0 +1,13 @@
+n=int(input())
+a=list(map(int,input().split()))
+max_absent=0
+current_absent=0
+for x in a:
+    if x==0:
+        current_absent+=1
+    else:
+        max_absent=max(max_absent,current_absent)
+        current_absent=0
+max_absent=max(max_absent,current_absent)
+print(max_absent)
+        
